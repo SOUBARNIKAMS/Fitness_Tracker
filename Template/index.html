@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <title>Fitness Corner</title>
+</head>
+<body>
+    <div class="container" >
+        <h1>Fitness Corner- Your AI trainer!</h1>
+        <form action="#" method="post"> 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="radio-group">
+                <input type="radio" id="1" name="option" value="1">
+                <label for="option1">Yoga Tree Pose</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="2" name="option" value="2">
+                <label for="option2">Yoga T Pose</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="3" name="option" value="3">
+                <label for="option3">Yoga Warrior Pose</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="4" name="option" value="4">
+                <label for="option4">Biceps Curl Workout</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="5" name="option" value="5">
+                <label for="option5">Push Ups Workout</label>
+            </div>
+            <input type="submit" value="Submit">
+            <p>Refresh the page after workout</p>
+        </form>
+    </div>
+    <div>
+        <img src="{{ url_for('video')}}" width="50%"/>
+    </div>
+    
+
+</body>
+</html>
